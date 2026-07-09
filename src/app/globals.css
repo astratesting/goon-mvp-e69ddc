@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-violet-50: #f5f3ff;
+  --color-violet-100: #ede9fe;
+  --color-violet-200: #ddd6fe;
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-violet-600: #7c3aed;
+  --color-violet-700: #6d28d9;
+  --color-violet-800: #5b21b6;
+  --color-violet-900: #4c1d95;
+
+  --color-coral-50: #fff7ed;
+  --color-coral-100: #ffedd5;
+  --color-coral-200: #fed7aa;
+  --color-coral-300: #fdba74;
+  --color-coral-400: #fb923c;
+  --color-coral-500: #f97316;
+  --color-coral-600: #ea580c;
+  --color-coral-700: #c2410c;
+
+  --color-honey-50: #fffbeb;
+  --color-honey-100: #fef3c7;
+  --color-honey-200: #fde68a;
+  --color-honey-300: #fcd34d;
+  --color-honey-400: #fbbf24;
+  --color-honey-500: #f59e0b;
+  --color-honey-600: #d97706;
+  --color-honey-700: #b45309;
+
+  --color-warm-50: #fefdfb;
+  --color-warm-100: #fdf8f0;
+  --color-warm-200: #faf0e1;
+
+  --font-sans: var(--font-manrope);
+  --font-body: var(--font-source-sans);
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.card-warm {
+  @apply bg-white rounded-2xl shadow-sm border border-violet-100 p-6;
+}
+
+.btn-primary {
+  @apply bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2.5 px-6 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md;
+}
+
+.btn-secondary {
+  @apply bg-coral-500 hover:bg-coral-600 text-white font-semibold py-2.5 px-6 rounded-xl transition-all duration-200;
+}
+
+.btn-outline {
+  @apply border-2 border-violet-200 text-violet-700 hover:bg-violet-50 font-semibold py-2.5 px-6 rounded-xl transition-all duration-200;
+}
+
+.input-warm {
+  @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violet-400 focus:ring-2 focus:ring-violet-100 outline-none transition-all duration-200 bg-white;
+}
